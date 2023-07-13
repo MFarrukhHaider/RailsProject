@@ -1,0 +1,24 @@
+<h1>New Post</h1>
+
+<%= form_for model: @post do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :context %><br>
+    <%= form.text_field :context %>
+  </div>
+  <div>
+    <%= form.label :context %><br>
+    <%= form.text_field :context %>
+  </div>
+  <div>
+    <%= form.check_box :published %>
+    <%= form.label :published, "I own a dog" %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
