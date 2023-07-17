@@ -1,0 +1,23 @@
+<h1>Update Post</h1>
+<%= form_with model:@post, url: update_post_path(@post) do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+
+  </div>
+
+  <div>
+    <%= form.label :context %><br>
+    <%= form.text_field :context %><br>
+
+  </div>
+
+  <div>
+    <%= form.label :published %><br>
+    <%= form.check_box :published %><br>
+
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

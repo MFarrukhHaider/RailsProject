@@ -9,3 +9,16 @@
     <%=post.published%>
 
 <%end%>
+
+<div>
+<br>
+<br>
+<%@published_posts.each do|post|%>
+<li>
+    <%=post.title%>
+    <%=post.context%>
+    <%=post.published%>
+</li>
+<br>
+<%end%>
+</div>
