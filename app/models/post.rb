@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-    belongs_to :user
-    has_many :quantities
+    # belongs_to :user
+    # has_many :quantities
     validates :title, presence: true
     validates :context, presence: true
 

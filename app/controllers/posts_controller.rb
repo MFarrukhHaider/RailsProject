@@ -28,6 +28,7 @@ class PostsController < ApplicationController
 
     def create
         @post=Post.new(post_params)
+        # byebug
         if @post.save
             redirect_to all_posts_path
           else
