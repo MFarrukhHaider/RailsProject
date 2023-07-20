@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
     def index
+        # byebug 
         @posts=Post.all
-        @published_posts=Post.published_posts
+        # @published_posts=Post.published_posts
     end
 
     def show
