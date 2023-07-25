@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
     def index
         # byebug 
         @posts=Post.all
@@ -40,5 +41,11 @@ class PostsController < ApplicationController
     def post_params
         params.require(:post).permit(:title,:context,:published)
     end
+
+    # private
+
+    # def set_post
+    #     @post=Post.find(params[:id])
+    # end
 
 end
